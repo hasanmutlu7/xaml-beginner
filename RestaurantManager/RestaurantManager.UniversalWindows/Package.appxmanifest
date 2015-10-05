@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
 
-  <Identity Name="b473317d-7ef4-4640-875e-3db2494b141c"
-            Publisher="CN=HM"
+  <Identity Name="e23d0038-f632-462a-908a-757cd81faf51"
+            Publisher="CN=hasan.mutlu"
             Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>RestaurantManager.UniversalWindows.Windows</DisplayName>
-    <PublisherDisplayName>HM</PublisherDisplayName>
+    <DisplayName>RestaurantManager.UniversalWindows</DisplayName>
+    <PublisherDisplayName>hasan.mutlu</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -23,12 +23,12 @@
   <Applications>
     <Application Id="App"
         Executable="$targetnametoken$.exe"
-        EntryPoint="RestaurantManager.UniversalWindows.Windows.App">
+        EntryPoint="RestaurantManager.UniversalWindows.App">
         <m2:VisualElements
-            DisplayName="RestaurantManager.UniversalWindows.Windows"
+            DisplayName="RestaurantManager.UniversalWindows"
             Square150x150Logo="Assets\Logo.png"
             Square30x30Logo="Assets\SmallLogo.png"
-            Description="RestaurantManager.UniversalWindows.Windows"
+            Description="RestaurantManager.UniversalWindows"
             ForegroundText="light"
             BackgroundColor="#464646">
             <m2:SplashScreen Image="Assets\SplashScreen.png" />
