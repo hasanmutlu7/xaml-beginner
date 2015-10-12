@@ -5,17 +5,22 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:RestaurantManager.Models"
     mc:Ignorable="d">
     <Page.TopAppBar>
         <AppBar>
             <Button FontSize="16" x:Name="HomeButton" Click="HomeButton_Click">Home</Button>
         </AppBar>
     </Page.TopAppBar>
+    <Page.DataContext>
+        <models:DataManager></models:DataManager>
+    </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.9*"></RowDefinition>
             <RowDefinition Height="0.1*"></RowDefinition>
         </Grid.RowDefinitions>
         <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Clear All Orders</Button>
+        <GridView x:Name="OrdersGrid" Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Path=OrderItems, Mode=OneWay}"/>
     </Grid>    
 </Page>

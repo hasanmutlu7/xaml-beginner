@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestaurantManager.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,5 +32,7 @@ namespace RestaurantManager.UniversalWindows
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        
     }
 }

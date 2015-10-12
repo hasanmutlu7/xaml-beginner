@@ -31,5 +31,9 @@ namespace RestaurantManager.UniversalWindows
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+       
+
+       
     }
 }
